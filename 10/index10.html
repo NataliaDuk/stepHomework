@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        
+        .tab {
+            border: 5px solid brown;
+            width: 500px;
+            height:500px;
+            background-color: brown;
+            border-collapse: collapse;
+            margin: auto;
+        }
+    
+        .chess:nth-child(even) td:nth-child(odd),
+        .chess:nth-child(odd) td:nth-child(even) {
+            background-color: white;
+        }
+
+        .chess td:hover {
+            background-image: url(Chess_qdt45.svg);
+            background-size: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-color: rgb(250, 49, 49) !important; */
+        }
+        .letter{
+            height: 1em;
+            color: white;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: rosybrown;
+            text-align: center;
+        }
+        .number{
+            width: 1em;
+            color:white;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color:rosybrown !important;
+            text-align: center;
+            background-image: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tab">
+        <tr>
+            <td class="letter"></td>
+            <td class="letter">A</td>
+            <td class="letter">B</td>
+            <td class="letter">C</td>
+            <td class="letter">D</td>
+            <td class="letter">E</td>
+            <td class="letter">F</td>
+            <td class="letter">G</td>
+            <td class="letter">H</td>
+            <td class="letter"></td>
+        </tr>
+        <tr class="chess">
+            <td class="number">8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">8</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">7</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">6</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">5</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">4</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">3</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">2</td>
+        </tr>
+        <tr class="chess">
+            <td class="number">1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="number">1</td>
+        </tr>
+        <tr class="head">
+            <td class="letter"></td>
+            <td class="letter">A</td>
+            <td class="letter">B</td>
+            <td class="letter">C</td>
+            <td class="letter">D</td>
+            <td class="letter">E</td>
+            <td class="letter">F</td>
+            <td class="letter">G</td>
+            <td class="letter">H</td>
+            <td class="letter"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
