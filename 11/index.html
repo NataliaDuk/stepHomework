@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            background-color: lightblue;
+        }
         
+        .smile{
+            width: 100px;
+            animation: 4s linear 0s infinite alternate move;
+            position: absolute;
+            bottom:40px;
+        }
+   
+        @keyframes move {
+            from {
+                margin-left: 0%;
+                rotate: rotate(0deg);
+            }
+
+            to {
+                margin-left: 93%;
+                transform: rotate(1080deg);
+            }
+        }
     </style>
 </head>
+
 <body>
-    
+    <img class="smile" src="smile.png">
 </body>
+
 </html>
