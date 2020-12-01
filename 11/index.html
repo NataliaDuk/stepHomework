@@ -12,19 +12,20 @@
 
         .smile {
             width: 100px;
-            animation: 4s linear 0s infinite alternate move;
+            animation: 2s linear 0s infinite alternate move;
             position: absolute;
-            bottom: 40px;
         }
 
         @keyframes move {
             from {
-                margin-left: 0%;
+                top: 0px;
+                left: 0px;
                 rotate: rotate(0deg);
             }
 
             to {
-                margin-left: 93%;
+                top: calc(100vh - 100px);
+                left: calc(100vw - 100px);
                 transform: rotate(calc(360deg*3));
             }
         }
