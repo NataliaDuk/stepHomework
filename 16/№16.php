@@ -21,7 +21,7 @@ echo "<br>Цикл WHILE:<br>";
 echo $f20 . "<br>";
 echo $f21 . "<br>";
 $i = 0;
-while ($i2 <= $count2 - 3){
+while ($i2 <= $count2 - 3) {
     $result2 = $f20 + $f21;
     echo $result2 . "<br>";
     $f20 = $f21;
@@ -35,7 +35,7 @@ $f31 = 1;
 echo "<br>Цикл DO WHILE:<br>";
 echo $f30 . "<br>";
 echo $f31 . "<br>";
-do{
+do {
     $result3 = $f30 + $f31;
     echo $result3 . "<br>";
     $f30 = $f31;
