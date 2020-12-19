@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTBALL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
 <?php
 $q1 = $_POST["q1"];
 $q2 = $_POST["q2"];
@@ -53,3 +65,11 @@ if ($result >= 9) {
     echo "Футбол - это не Ваше)<br>
     Спасибо, что прошли наш тест!";
 }
+?>
+    </div>
+<footer>
+        &copy; Zhizhnevskiy Yuriy 2020
+    </footer>
+</body>
+
+</html>
