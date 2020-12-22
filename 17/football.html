@@ -12,8 +12,9 @@
     <h1>Тест футбольного фаната</h1>
     <form class="question" action="football.php" method="POST">
         <span>1. Сколько человек играют на поле в футболе?<br></span>
-        <input type="text" name="q1">
-        <br>
+        <input type="radio" name="q1" value="7">7 человек<br>
+        <input type="radio" name="q1" value="10">10 человек<br>
+        <input type="radio" name="q1" value="11">11 человек<br>
         <span>2. Кто такой голкипер?<br></span>
         <input type="text" name="q2">
         <br>
@@ -21,10 +22,14 @@
         <input type="text" name="q3">
         <br>
         <span>4. Какой по счёту чемпионат мира по футболу 2010?<br></span>
-        <input type="text" name="q4">
-        <br>
+        <select name="q4">
+            <option value="" selected></option>
+            <option value="19">19-й</option>
+            <option value="16">16-й</option>
+            <option value="14">14-й</option>
+        </select> <br>
         <span>5. Со скольких метров бьётся пенальти?<br></span>
-        <input type="text" name="q5">
+        <input type="number" value="1" min="1" max="999" name="q5">
         <br>
         <span>6. В составляющую часть футбольного мяча входит камера?<br></span>
         <input type="text" name="q6">
