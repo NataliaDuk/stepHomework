@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTBALL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Тест футбольного фаната</h1>
+    <form class="question" action="football.php" method="POST">
+
+        <span>1. Сколько футболистов играют за команду на поле?<br></span>
+        <input type="radio" name="q1" value="10">10 футболистов<br>
+        <input type="radio" name="q1" value="11">11 футболистов<br>
+        <input type="radio" name="q1" value="12">12 футболистов<br>
+
+        <span>2. Кто такой голкипер?<br></span>
+        <input type="text" name="q2"><br>
+
+        <span>3. Кто такой форвард?<br></span>
+        <input type="text" name="q3"><br>
+
+        <span>4. Какой по счёту чемпионат мира по футболу 2010?<br></span>
+        <select name="q4">
+            <option value="" selected></option>
+            <option value="19">19-й</option>
+            <option value="16">16-й</option>
+            <option value="14">14-й</option>
+        </select> <br>
+
+        <span>5. Со скольких метров бьётся пенальти?<br></span>
+        <input type="number" value="" min="1" max="20" name="q5"><br>
+
+        <span>6. В составляющую часть футбольного мяча входит камера?<br></span>
+        <input type="text" name="q6"><br>
+
+        <span>7. Где производится большинство футбольных мячей в мире?<br></span>
+        <input type="text" name="q7"><br>
+
+        <span>8.Назовите прозвище футбольного клуба "Челси"?<br></span>
+        <input type="text" name="q8"><br>
+
+        <span>9. Какое животное изображено на эмблеме футбольного клуба "Краснодар"?<br></span>
+        <input type="text" name="q9"><br>
+
+        <span>10. В каких годах "Ювентус" выигрывал Лигу чемпионов?<br></span>
+        <input type="checkbox" name="q10" value="1982">1982<br>
+        <input type="checkbox" name="q10" value="1985">1985<br>
+        <input type="checkbox" name="q10" value="1996">1996<br>
+        <input type="checkbox" name="q10" value="2004">2004<br>
+
+        <input type="reset" value="сбросить">
+        <input type="submit" value="проверить">
+
+    </form>
+    <footer>
+        &copy; Zhizhnevskiy Yuriy 2020
+    </footer>
+</body>
+
+</html>
