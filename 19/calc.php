@@ -26,20 +26,27 @@ $numbers = [
     "десять" => 10
 ];
 
-echo $numbers[$answer1] . $answer3 . $numbers[$answer2];
+echo "Ваш результат = ";
 
+if ($answer1 == "" || $answer2 == "" || $answer3 == ""){
+    echo '"необходимо ввести все данные."';
+}
 
+if ($answer3 == "+"){
+    echo $numbers[$answer1] + $numbers[$answer2];
+}
 
+if ($answer3 == "-"){
+    echo $numbers[$answer1] - $numbers[$answer2];
+}
 
-
-
-
-
-
-
-
-
-
+if ($answer3 == "*"){
+    echo $numbers[$answer1] * $numbers[$answer2];
+    }
+    
+if ($answer3 == "/"){
+    echo $numbers[$answer1] / $numbers[$answer2];
+}
 
 ?>
 </body>
