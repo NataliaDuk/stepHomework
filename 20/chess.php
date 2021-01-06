@@ -25,7 +25,7 @@
     <br>
     <h2>Выберите вес зерна:</h2>
     <span>Вес(г):</span>
-    <input type="number" value="1" min="1" max="999" name="q1">
+    <input type="number" value="1" min="1" max="999" name="q3">
     <br><br>
     <input type="submit" value="выполнить">
 </form>
