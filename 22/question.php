@@ -8,6 +8,10 @@
     <style>
         body {
             text-align: center;
+            background-image: url(back.jpg);
+            background-size: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -25,28 +29,22 @@
     $saveData = $data[0] . $data[1] . $data[2] . $data[3];
 
     $fp = fopen("file.txt", "w+");
+    
     fwrite($fp, $saveData);
-    echo max($data[0], $data[1], $data[2], $data[3]);
-
     fclose($fp);
     ?>
 
     <h1>Voting results</h1>
     <img src="PHP.jpg">
-    <?php echo  $data[0] ?>
+    <span>VOTE: <?php echo $data[0] ?>.</span>
     <img src="JAVA.jpg">
-    <?php echo  $data[1] ?>
+    <span>VOTE: <?php echo $data[1] ?>.</span>
     <br>
     <img src="C++.jpg">
-    <?php echo  $data[2] ?>
+    <span>VOTE: <?php echo $data[2] ?>.</span>
     <img src="PYTHON.jpg">
-    <?php echo  $data[3] ?>
-    <br>
-    <?php
+    <span>VOTE: <?php echo $data[2] ?>.</span>
 
-    echo max($data[0], $data[1], $data[2], $data[3]);
-    print_r($data);
-    ?>
 </body>
 
 </html>
