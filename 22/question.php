@@ -29,21 +29,26 @@
     $saveData = $data[0] . $data[1] . $data[2] . $data[3];
 
     $fp = fopen("file.txt", "w+");
-    
+
     fwrite($fp, $saveData);
     fclose($fp);
     ?>
 
     <h1>Voting results</h1>
+
     <img src="PHP.jpg">
-    <span>VOTE: <?php echo $data[0] ?>.</span>
+    <span>VOTE: <?php echo $data[0] ?></span>
+
     <img src="JAVA.jpg">
-    <span>VOTE: <?php echo $data[1] ?>.</span>
+    <span>VOTE: <?php echo $data[1] ?></span>
+
     <br>
-    <img src="C++.jpg">
-    <span>VOTE: <?php echo $data[2] ?>.</span>
+
     <img src="PYTHON.jpg">
-    <span>VOTE: <?php echo $data[2] ?>.</span>
+    <span>VOTE: <?php echo $data[2] ?></span>
+    
+    <img src="C++.jpg">
+    <span>VOTE: <?php echo $data[3] ?></span>
 
 </body>
 
