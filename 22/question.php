@@ -46,7 +46,7 @@
 
     <img src="PYTHON.jpg">
     <span>VOTE: <?php echo $data[2] ?></span>
-    
+
     <img src="C++.jpg">
     <span>VOTE: <?php echo $data[3] ?></span>
 
