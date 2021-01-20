@@ -50,6 +50,9 @@
     <img src="C++.jpg">
     <span>VOTE: <?php echo $data[3] ?></span>
 
+
+
+    
 </body>
 
 </html>
