@@ -1,14 +1,14 @@
 What programming language are you learning?
 VBA - 17
-Objective-C - 9
+Objective-C - 16
 Assembly - 12
 C - 12
-PHP - 27
+PHP - 31
 Erlang - 12
 Ruby - 16
-R - 19
-C++ - 28
-Java - 18
+R - 20
+C++ - 29
+Java - 30
 Scala - 12
 Shell/PowerShell - 15
 F# - 17

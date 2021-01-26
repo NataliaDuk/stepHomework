@@ -1,3 +1,19 @@
+<?php
+include "config.php";
+
+$data = file($fileName);
+
+if (isset($_POST['answer'])) {
+    $currentAnswer = $_POST['answer'];
+    $buff = explode($separate, $data[$currentAnswer + 1]);
+    $buff[1] += 1;
+    $buff[1] .= "\n";
+    $data[$currentAnswer + 1] = $buff[0] . $separate . $buff[1];
+    file_put_contents($fileName, implode("", $data));
+    header('Location: ?');
+    die();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,19 +26,6 @@
 
 <body>
     <?php
-
-    include "config.php";
-
-    $data = file($fileName);
-
-    if (isset($_POST['answer'])) {
-        $currentAnswer = $_POST['answer'];
-        $buff = explode($separate, $data[$currentAnswer + 1]);
-        $buff[1] += 1;
-        $buff[1] .= "\n";
-        $data[$currentAnswer + 1] = $buff[0] . $separate . $buff[1];
-        file_put_contents($fileName, implode("", $data));
-    }
     $question = $data[0];
     unset($data[0]);
 
@@ -30,7 +33,6 @@
     foreach ($data as $value) {
         $answers[] = explode($separate, $value);
     }
-
     ?>
 
     <h2><?= $question ?></h2>
@@ -38,6 +40,7 @@
     <div class="block">
         <form action="?" method="POST">
             <?php
+            $percent100 = 0;
             foreach ($answers as $value) {
                 $percent100 += $value[1];
             }
