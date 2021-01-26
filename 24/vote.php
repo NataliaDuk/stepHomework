@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <?php
-    // print_r($_POST);
+
     include "config.php";
+
     $data = file($fileName);
+
     if (isset($_POST['answer'])) {
         $currentAnswer = $_POST['answer'];
         $buff = explode($separate, $data[$currentAnswer + 1]);
@@ -27,20 +30,31 @@
     foreach ($data as $value) {
         $answers[] = explode($separate, $value);
     }
-    // print_r($answers);
+
     ?>
 
-    <form action="?" method="POST">
-        <?= $question ?>
-        <br>
-        <?php
-        foreach ($answers as $key => $value) {
-            $count = $value[1] * 1;
-            echo "<input type='radio'value='$key' name = 'answer'> $value[0] ($count)<br>";
-        }
-        ?>
-        <input type="submit" value="ok">
-    </form>
+    <h2><?= $question ?></h2>
+    <br>
+    <div class="block">
+        <form action="?" method="POST">
+            <?php
+            foreach ($answers as $value) {
+                $percent100 += $value[1];
+            }
+
+            $percent1 = $percent100 / 100;
+
+            foreach ($answers as $key => $value) {
+                $count = $value[1];
+                $width = round(($count / $percent1), 2);
+                echo "<input type='radio' value='$key' name = 'answer'> <b>$value[0]</b> (voted: $count = $width%)
+                <div class='persent' style='width: {$width}em;'></div><br>";
+            }
+            ?>
+            <br>
+            <input type="submit" value="vote">
+        </form>
+    </div>
 </body>
 
 </html>

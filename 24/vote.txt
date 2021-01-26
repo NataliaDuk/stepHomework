@@ -1,4 +1,19 @@
-Вы онлайн или оффлайн?
-онлайн - 13
-оффлайн - 9
-не знаю - 3
+What programming language are you learning?
+VBA - 17
+Objective-C - 9
+Assembly - 12
+C - 12
+PHP - 27
+Erlang - 12
+Ruby - 16
+R - 19
+C++ - 28
+Java - 18
+Scala - 12
+Shell/PowerShell - 15
+F# - 17
+HTML/CSS - 21
+SQL - 10
+Dart - 12
+JavaScript - 18
+C# - 15

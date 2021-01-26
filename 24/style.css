@@ -1,0 +1,20 @@
+h2 {
+    text-align: center;
+}
+
+.block {
+    position: absolute;
+    margin-left: calc(50% - 500px);
+    width: 500px;
+    text-align: right;
+    padding-right: 280px;
+    line-height: 1.5;
+}
+
+.persent {
+    position: absolute;
+    background-color: rgb(60, 131, 224);
+    height: 10px;
+    margin-left: 65%;
+    margin-top: -15px;
+}
