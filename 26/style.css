@@ -1,3 +1,7 @@
+body {
+    background-image: url(img14.jpg);
+    background-size: 100%;    
+}
 .error {
     color: #FF0000;
 }
